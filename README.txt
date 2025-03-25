@@ -12,15 +12,15 @@ Ctrl+Shift+P > "Python: Select Interpreter" > Choose Python 3.10
 4️⃣ Set PowerShell Script Permissions (Windows Only):
 Run this in PowerShell:
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+(Mac users do NOT need this ^ step)
 
-(Mac users do NOT need this step)
+(NOTE: Mac users use "python3" or "pip3" for all future steps.)
 
 5️⃣ Create a Virtual Environment:
 python -m venv venv
 
 6️⃣ Activate the Virtual Environment:
-PowerShell: .\venv\Scripts\Activate.ps1
-CMD: venv\Scripts\activate.bat
+PowerShell: .\venv\Scripts\Activate
 Mac/Linux: source venv/bin/activate
 
 7️⃣ Install Dependencies:
